@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Currency;
+import java.util.Date;
 
 @Entity
 @NoArgsConstructor
@@ -22,13 +24,20 @@ public class Resume {
     private User user;
 
     private String specialization;
-    private float expirience;
+    private float experience;
     private String schedule;
+    private Date creationDate;
+    private Currency salary;
+    private String resumeText;
 
-    public Resume(User user, String specialization, float expirience, String schedule) {
+
+    public Resume(User user, String specialization, float experience, String schedule, Date creationDate, Currency salary, String resumeText) {
         this.user = user;
         this.specialization = specialization;
-        this.expirience = expirience;
+        this.experience = experience;
         this.schedule = schedule;
+        this.creationDate = creationDate;
+        this.salary = salary;
+        this.resumeText = resumeText;
     }
 }
