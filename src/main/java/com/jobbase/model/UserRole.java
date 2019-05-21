@@ -1,7 +1,7 @@
 package com.jobbase.model;
 
 public enum UserRole {
-    ADMIN, USER;
+    ADMIN, EMPLOYEE, EMPLOYER;
 
     @Override
     public String toString() {
